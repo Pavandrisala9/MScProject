@@ -1,0 +1,71 @@
+.app__dashboard {
+  width: 100%;
+}
+
+.app__dashboard-container {
+  width: 80%;
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.app__chart,
+.app__user,
+.app__totalPoints,
+.app__history {
+  border: 1px dashed var(--gray-color);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app__chart {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.app__user {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  svg {
+    font-size: 5rem;
+    color: var(--secondary-color);
+  }
+}
+.app__history {
+  padding: 1rem;
+
+  align-items: flex-start;
+  gap: 0.5rem;
+
+  overflow: -moz-hidden-scrollable;
+  a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 700;
+    width: 100%;
+  }
+  li {
+    //border: 1px dashed var(--gray-color);
+    border-radius: 0.5rem;
+
+    padding: 0.25rem;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+  }
+}
+.app__totalPoints {
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  svg {
+    color: orangered;
+  }
+}

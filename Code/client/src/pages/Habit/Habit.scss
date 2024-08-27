@@ -1,0 +1,29 @@
+.app__habits {
+  width: 80%;
+  margin: auto auto;
+  padding: 1rem;
+}
+.app__habits-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.app__habit {
+  border: 1px dashed var(--gray-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: 0.5s all ease-in-out;
+  p {
+    font-family: var(--font-base);
+  }
+  input {
+    border: 1px solid var(--gray-color);
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  }
+}

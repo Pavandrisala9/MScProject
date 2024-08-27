@@ -1,0 +1,27 @@
+.app__heatmap {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.app__heatmap-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  h1,
+  p {
+    font-family: var(--font-base);
+  }
+}
+.app__heatmap-container {
+  width: 20%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px dashed var(--gray-color);
+}
